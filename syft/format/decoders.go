@@ -3,12 +3,12 @@ package format
 import (
 	"io"
 
-	"github.com/anchore/syft/syft/format/cyclonedxjson"
-	"github.com/anchore/syft/syft/format/cyclonedxxml"
-	"github.com/anchore/syft/syft/format/spdxjson"
-	"github.com/anchore/syft/syft/format/spdxtagvalue"
-	"github.com/anchore/syft/syft/format/syftjson"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxjson"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxxml"
+	"github.com/oligocybersecurity/syft/syft/format/spdxjson"
+	"github.com/oligocybersecurity/syft/syft/format/spdxtagvalue"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var staticDecoders sbom.FormatDecoder

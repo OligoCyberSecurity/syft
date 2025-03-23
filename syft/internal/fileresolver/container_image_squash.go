@@ -8,7 +8,7 @@ import (
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/filetree"
 	"github.com/anchore/stereoscope/pkg/image"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var _ file.Resolver = (*ContainerImageSquash)(nil)

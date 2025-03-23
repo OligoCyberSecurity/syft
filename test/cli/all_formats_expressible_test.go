@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/template"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/template"
 )
 
 func TestAllFormatsExpressible(t *testing.T) {

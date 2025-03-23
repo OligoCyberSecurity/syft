@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/anchore/go-homedir"
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 const (

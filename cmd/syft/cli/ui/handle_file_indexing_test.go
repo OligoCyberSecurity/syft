@@ -11,7 +11,7 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	syftEvent "github.com/anchore/syft/syft/event"
+	syftEvent "github.com/oligocybersecurity/syft/syft/event"
 )
 
 func TestHandler_handleFileIndexingStarted(t *testing.T) {

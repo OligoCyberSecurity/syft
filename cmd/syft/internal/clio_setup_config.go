@@ -6,11 +6,11 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/stereoscope"
-	handler "github.com/anchore/syft/cmd/syft/cli/ui"
-	"github.com/anchore/syft/cmd/syft/internal/ui"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/redact"
+	handler "github.com/oligocybersecurity/syft/cmd/syft/cli/ui"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/ui"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/redact"
 )
 
 func AppClioSetupConfig(id clio.Identification, out io.Writer) *clio.SetupConfig {

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func Test_ProcessPathErrors(t *testing.T) {

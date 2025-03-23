@@ -12,7 +12,7 @@ import (
 
 	"github.com/facebookincubator/nvdtools/wfn"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/cpegenerate/dictionary"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/cpegenerate/dictionary"
 )
 
 func generateIndexedDictionaryJSON(rawGzipData io.Reader) ([]byte, error) {

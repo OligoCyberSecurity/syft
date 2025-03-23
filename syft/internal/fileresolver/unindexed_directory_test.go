@@ -21,7 +21,7 @@ import (
 	"go.uber.org/goleak"
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func Test_UnindexDirectoryResolver_RequestRelativePathWithinSymlink(t *testing.T) {

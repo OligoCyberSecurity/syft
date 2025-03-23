@@ -11,12 +11,12 @@ import (
 
 	"github.com/anchore/clio"
 	hashiVersion "github.com/anchore/go-version"
-	"github.com/anchore/syft/cmd/syft/internal"
-	"github.com/anchore/syft/cmd/syft/internal/options"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/event/parsers"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/event"
+	"github.com/oligocybersecurity/syft/syft/event/parsers"
 )
 
 var latestAppVersionURL = struct {

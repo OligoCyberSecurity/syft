@@ -3,14 +3,14 @@ package task
 import (
 	"context"
 
-	"github.com/anchore/syft/internal/relationship"
-	"github.com/anchore/syft/internal/relationship/binary"
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cataloging"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/relationship"
+	"github.com/oligocybersecurity/syft/internal/relationship/binary"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 var _ artifact.Identifiable = (*sourceIdentifierAdapter)(nil)
@@ -50,7 +50,7 @@ func finalizeRelationships(resolver file.Resolver, builder sbomsync.Builder, cfg
 	}
 
 	// conditionally remove binary packages based on file ownership overlap relationships found
-	// https://github.com/anchore/syft/issues/931
+	// https://github.com/oligocybersecurity/syft/issues/931
 	if cfg.ExcludeBinaryPackagesWithFileOwnershipOverlap {
 		relationship.ExcludeBinariesByFileOwnershipOverlap(accessor)
 	}

@@ -1,7 +1,7 @@
 package options
 
 import (
-	"github.com/anchore/syft/syft/format/cyclonedxjson"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxjson"
 )
 
 type FormatCyclonedxJSON struct {

@@ -1,7 +1,7 @@
 package spdxutil
 
 import (
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 const DefaultVersion = "2.3"

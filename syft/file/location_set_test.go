@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/evidence"
-	"github.com/anchore/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/internal/evidence"
+	"github.com/oligocybersecurity/syft/syft/artifact"
 )
 
 func TestLocationSet_SortPaths(t *testing.T) {

@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func DocumentName(src source.Description) string {

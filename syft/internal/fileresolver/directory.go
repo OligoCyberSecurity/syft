@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/anchore/stereoscope/pkg/filetree"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var ErrSkipPath = errors.New("skip path")

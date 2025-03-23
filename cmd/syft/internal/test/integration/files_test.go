@@ -12,11 +12,11 @@ import (
 
 	"github.com/anchore/clio"
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/cmd/syft/internal/options"
-	"github.com/anchore/syft/syft/cataloging/filecataloging"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/file/cataloger/filecontent"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/syft/cataloging/filecataloging"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file/cataloger/filecontent"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func TestFileCataloging_Default(t *testing.T) {

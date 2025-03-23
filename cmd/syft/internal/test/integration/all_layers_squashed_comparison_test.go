@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_AllLayersIncludesSquashed(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal/task"
+	"github.com/oligocybersecurity/syft/internal/task"
 )
 
 func Test_filterExpressionErrors_expressionErrorsHelp(t *testing.T) {

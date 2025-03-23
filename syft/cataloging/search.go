@@ -1,6 +1,6 @@
 package cataloging
 
-import "github.com/anchore/syft/syft/source"
+import "github.com/oligocybersecurity/syft/syft/source"
 
 type SearchConfig struct {
 	Scope source.Scope `yaml:"scope" json:"scope" mapstructure:"scope"`

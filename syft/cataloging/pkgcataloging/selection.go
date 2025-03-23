@@ -1,7 +1,7 @@
 package pkgcataloging
 
 import (
-	"github.com/anchore/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
 )
 
 // SelectionRequest is deprecated: use cataloging.SelectionRequest instead

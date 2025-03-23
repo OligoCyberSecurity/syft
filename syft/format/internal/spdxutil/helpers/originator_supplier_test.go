@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/internal/packagemetadata"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/internal/packagemetadata"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func Test_OriginatorSupplier(t *testing.T) {

@@ -3,8 +3,8 @@ package executable
 import (
 	"debug/macho"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
 )
 
 // source http://www.cilinder.be/docs/next/NeXTStep/3.3/nd/DevTools/14_MachO/MachO.htmld/index.html

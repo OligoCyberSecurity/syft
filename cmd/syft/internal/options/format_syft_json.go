@@ -1,7 +1,7 @@
 package options
 
 import (
-	"github.com/anchore/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
 )
 
 type FormatSyftJSON struct {

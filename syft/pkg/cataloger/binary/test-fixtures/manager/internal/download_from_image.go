@@ -11,8 +11,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/ui"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/ui"
 )
 
 const digestFileSuffix = ".xxh64"

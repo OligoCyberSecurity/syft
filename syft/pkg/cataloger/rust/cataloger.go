@@ -4,9 +4,9 @@ Package rust provides a concrete Cataloger implementation relating to packages w
 package rust
 
 import (
-	"github.com/anchore/syft/internal/mimetype"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/internal/mimetype"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 const cargoAuditBinaryCatalogerName = "cargo-auditable-binary-cataloger"

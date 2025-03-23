@@ -2,9 +2,9 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/spdxtagvalue"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/spdxtagvalue"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ interface {
@@ -35,7 +35,7 @@ func (o *Format) DescribeFields(descriptions clio.FieldDescriptionSet) {
 	descriptions.Add(&o.Pretty, `default value for all formats that support the "pretty" option (default is unset)`)
 	descriptions.Add(&o.SyftJSON, `all syft-json format options`)
 	descriptions.Add(&o.SyftJSON.Legacy, `transform any syft-json output to conform to an approximation of the v11.0.1 schema. This includes:
-- using the package metadata type names from before v12 of the JSON schema (changed in https://github.com/anchore/syft/pull/1983)
+- using the package metadata type names from before v12 of the JSON schema (changed in https://github.com/oligocybersecurity/syft/pull/1983)
 
 Note: this will still include package types and fields that were added at or after json schema v12. This means
 that output might not strictly be json schema v11 compliant, however, for consumers that require time to port

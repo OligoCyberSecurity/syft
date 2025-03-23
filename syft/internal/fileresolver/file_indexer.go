@@ -9,8 +9,8 @@ import (
 
 	"github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/filetree"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/internal/windows"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/internal/windows"
 )
 
 type fileIndexer struct {

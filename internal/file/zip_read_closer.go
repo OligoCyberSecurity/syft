@@ -9,7 +9,7 @@ import (
 	"math"
 	"os"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 // directoryEndLen, readByf, directoryEnd, and findSignatureInBlock were copied from the golang stdlib, specifically:

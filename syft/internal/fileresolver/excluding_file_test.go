@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func TestExcludingResolver(t *testing.T) {

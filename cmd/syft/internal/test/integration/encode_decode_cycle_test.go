@@ -12,10 +12,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/cmd/syft/internal/options"
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/syftjson"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 // TestEncodeDecodeEncodeCycleComparison is testing for differences in how SBOM documents get encoded on multiple cycles.

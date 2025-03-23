@@ -3,8 +3,8 @@ package java
 import (
 	"strings"
 
-	"github.com/anchore/syft/syft/cataloging"
-	"github.com/anchore/syft/syft/pkg/cataloger/java/internal/maven"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/java/internal/maven"
 )
 
 type ArchiveCatalogerConfig struct {

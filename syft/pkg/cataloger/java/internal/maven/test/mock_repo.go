@@ -11,7 +11,7 @@ import (
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal"
+	"github.com/oligocybersecurity/syft/internal"
 )
 
 // MockRepo starts a remote maven repo serving all the pom files found in a maven-structured directory

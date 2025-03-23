@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func Test_TaskExecutor_PanicHandling(t *testing.T) {

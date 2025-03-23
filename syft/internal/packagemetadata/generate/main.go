@@ -7,13 +7,13 @@ import (
 
 	"github.com/dave/jennifer/jen"
 
-	"github.com/anchore/syft/syft/internal/packagemetadata"
+	"github.com/oligocybersecurity/syft/syft/internal/packagemetadata"
 )
 
 // This program is invoked from syft/internal and generates packagemetadata/generated.go
 
 const (
-	pkgImport = "github.com/anchore/syft/syft/pkg"
+	pkgImport = "github.com/oligocybersecurity/syft/syft/pkg"
 	path      = "packagemetadata/generated.go"
 )
 

@@ -11,14 +11,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cataloging"
-	"github.com/anchore/syft/syft/cataloging/filecataloging"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/filecataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 var _ pkg.Cataloger = (*dummyCataloger)(nil)

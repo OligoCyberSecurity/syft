@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func encodePublisher(p pkg.Package) string {

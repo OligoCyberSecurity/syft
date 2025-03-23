@@ -1,6 +1,6 @@
 package helpers
 
-import "github.com/anchore/syft/syft/pkg"
+import "github.com/oligocybersecurity/syft/syft/pkg"
 
 func encodeGroup(p pkg.Package) string {
 	if hasMetadata(p) {

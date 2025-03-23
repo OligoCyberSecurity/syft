@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func Test_parseBitnamiPURL(t *testing.T) {

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/internal/spdxlicense"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal/licenses"
+	"github.com/oligocybersecurity/syft/internal/spdxlicense"
+	"github.com/oligocybersecurity/syft/syft/license"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func License(p pkg.Package) (concluded, declared string) {

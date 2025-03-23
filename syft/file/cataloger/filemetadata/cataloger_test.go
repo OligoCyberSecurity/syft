@@ -10,9 +10,9 @@ import (
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/stereoscopesource"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/stereoscopesource"
 )
 
 func TestFileMetadataCataloger(t *testing.T) {

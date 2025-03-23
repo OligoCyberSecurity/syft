@@ -6,11 +6,11 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/unknown"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/unknown"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 type Cataloger struct {

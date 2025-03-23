@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/anchore/stereoscope/pkg/filetree"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 // Compile time assurance that we meet the Resolver interface.

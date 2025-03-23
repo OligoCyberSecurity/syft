@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/internal/sourcemetadata"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/internal/sourcemetadata"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_DocumentName(t *testing.T) {

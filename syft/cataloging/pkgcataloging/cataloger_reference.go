@@ -1,6 +1,6 @@
 package pkgcataloging
 
-import "github.com/anchore/syft/syft/pkg"
+import "github.com/oligocybersecurity/syft/syft/pkg"
 
 type CatalogerReference struct {
 	Cataloger     pkg.Cataloger

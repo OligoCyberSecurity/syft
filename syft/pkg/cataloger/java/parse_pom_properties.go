@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-viper/mapstructure/v2"
 
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 const pomPropertiesGlob = "*pom.properties"

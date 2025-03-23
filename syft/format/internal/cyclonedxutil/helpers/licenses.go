@@ -6,9 +6,9 @@ import (
 
 	"github.com/CycloneDX/cyclonedx-go"
 
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/internal/spdxlicense"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal/licenses"
+	"github.com/oligocybersecurity/syft/internal/spdxlicense"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 // This should be a function that just surfaces licenses already validated in the package struct

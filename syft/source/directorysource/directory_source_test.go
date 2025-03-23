@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	"github.com/anchore/syft/syft/internal/testutil"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/internal/fileresolver"
+	"github.com/oligocybersecurity/syft/syft/internal/testutil"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func TestNewFromDirectory(t *testing.T) {

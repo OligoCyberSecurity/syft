@@ -3,7 +3,7 @@ package internal
 import (
 	"strings"
 
-	"github.com/anchore/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/artifact"
 )
 
 func ArtifactIDFromDigest(input string) artifact.ID {

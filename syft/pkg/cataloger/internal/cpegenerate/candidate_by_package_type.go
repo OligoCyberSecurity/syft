@@ -1,7 +1,7 @@
 package cpegenerate
 
 import (
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 // candidateComposite is a convenience when creating the defaultCandidateAdditions set

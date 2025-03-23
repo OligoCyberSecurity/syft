@@ -8,15 +8,15 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/licenses"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 // CreateSBOM creates a software bill-of-materials from the given source. If the CreateSBOMConfig is nil, then

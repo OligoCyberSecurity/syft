@@ -10,7 +10,7 @@ import (
 	"github.com/go-viper/mapstructure/v2"
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 const ApkDBGlob = "**/lib/apk/db/installed"

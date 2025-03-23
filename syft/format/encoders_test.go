@@ -7,16 +7,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/format/cyclonedxjson"
-	"github.com/anchore/syft/syft/format/cyclonedxxml"
-	"github.com/anchore/syft/syft/format/internal/cyclonedxutil"
-	"github.com/anchore/syft/syft/format/internal/spdxutil"
-	"github.com/anchore/syft/syft/format/spdxjson"
-	"github.com/anchore/syft/syft/format/spdxtagvalue"
-	"github.com/anchore/syft/syft/format/syftjson"
-	"github.com/anchore/syft/syft/format/template"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxjson"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxxml"
+	"github.com/oligocybersecurity/syft/syft/format/internal/cyclonedxutil"
+	"github.com/oligocybersecurity/syft/syft/format/internal/spdxutil"
+	"github.com/oligocybersecurity/syft/syft/format/spdxjson"
+	"github.com/oligocybersecurity/syft/syft/format/spdxtagvalue"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft/format/template"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func Test_Encoders(t *testing.T) {

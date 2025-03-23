@@ -5,7 +5,7 @@ import (
 
 	urilib "github.com/spdx/gordf/uri"
 
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 const NONE = "NONE"

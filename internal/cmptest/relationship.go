@@ -3,7 +3,7 @@ package cmptest
 import (
 	"github.com/sanity-io/litter"
 
-	"github.com/anchore/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/artifact"
 )
 
 type RelationshipComparer func(x, y artifact.Relationship) bool

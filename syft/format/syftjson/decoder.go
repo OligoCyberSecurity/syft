@@ -8,11 +8,11 @@ import (
 
 	"github.com/Masterminds/semver"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/format/internal/stream"
-	"github.com/anchore/syft/syft/format/syftjson/model"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/format/internal/stream"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson/model"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ sbom.FormatDecoder = (*decoder)(nil)

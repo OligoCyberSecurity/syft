@@ -4,7 +4,7 @@ import (
 	"crypto"
 
 	"github.com/anchore/stereoscope/pkg/image"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 // Config is the uber-configuration for all Syft source providers

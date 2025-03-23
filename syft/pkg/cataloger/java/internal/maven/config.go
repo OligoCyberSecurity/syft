@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/anchore/go-homedir"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 const mavenBaseURL = "https://repo1.maven.org/maven2"

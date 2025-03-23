@@ -3,8 +3,8 @@ package relationship
 import (
 	"sort"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 // Sort takes a set of package-to-package relationships and sorts them in a stable order by name and version.
