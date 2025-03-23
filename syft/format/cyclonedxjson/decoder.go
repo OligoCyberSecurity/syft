@@ -7,11 +7,11 @@ import (
 
 	"github.com/CycloneDX/cyclonedx-go"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/format/internal/cyclonedxutil"
-	"github.com/anchore/syft/syft/format/internal/cyclonedxutil/helpers"
-	"github.com/anchore/syft/syft/format/internal/stream"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/format/internal/cyclonedxutil"
+	"github.com/oligocybersecurity/syft/syft/format/internal/cyclonedxutil/helpers"
+	"github.com/oligocybersecurity/syft/syft/format/internal/stream"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ sbom.FormatDecoder = (*decoder)(nil)

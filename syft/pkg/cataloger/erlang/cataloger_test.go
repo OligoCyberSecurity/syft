@@ -3,7 +3,7 @@ package erlang
 import (
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/pkgtest"
 )
 
 func TestCatalogerRebar_Globs(t *testing.T) {

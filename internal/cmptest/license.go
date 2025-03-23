@@ -3,8 +3,8 @@ package cmptest
 import (
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 type LicenseComparer func(x, y pkg.License) bool

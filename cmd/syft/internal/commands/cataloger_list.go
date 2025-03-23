@@ -12,9 +12,9 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
 )
 
 type catalogerListOptions struct {

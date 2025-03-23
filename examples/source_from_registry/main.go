@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
 )
 
 // This example demonstrates how to create an SBOM, pulling only from "registry", with error handling omitted

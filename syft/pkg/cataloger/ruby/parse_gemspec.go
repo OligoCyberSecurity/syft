@@ -10,11 +10,11 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 var _ generic.Parser = parseGemFileLockEntries
@@ -37,7 +37,7 @@ var patterns = map[string]*regexp.Regexp{
 	"version": regexp.MustCompile(`.*\.version\s*=\s*["']{1}(?P<version>.*)["']{1} *`),
 
 	// match example:
-	// homepage = "https://github.com/anchore/syft".freeze   --->   https://github.com/anchore/syft
+	// homepage = "https://github.com/oligocybersecurity/syft".freeze   --->   https://github.com/oligocybersecurity/syft
 	"homepage": regexp.MustCompile(`.*\.homepage\s*=\s*["']{1}(?P<homepage>.*)["']{1} *`),
 
 	// match example:       files = ["exe/bundle".freeze, "exe/bundler".freeze]    --->    "exe/bundle".freeze, "exe/bundler".freeze

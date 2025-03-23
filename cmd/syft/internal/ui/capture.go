@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 const defaultStdoutLogBufferSize = 1024

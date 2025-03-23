@@ -12,14 +12,14 @@ import (
 	"github.com/stretchr/testify/require"
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/format/internal/testutil"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/format/internal/testutil"
+	"github.com/oligocybersecurity/syft/syft/linux"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_EncodeDecodeCycle(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 const (

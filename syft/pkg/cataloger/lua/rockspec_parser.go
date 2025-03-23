@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/anchore/syft/syft/internal/parsing"
+	"github.com/oligocybersecurity/syft/syft/internal/parsing"
 )
 
 type rockspec struct {

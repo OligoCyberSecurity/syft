@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func BenchmarkImagePackageCatalogers(b *testing.B) {

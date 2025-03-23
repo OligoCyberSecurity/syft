@@ -7,13 +7,13 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/cataloging"
-	"github.com/anchore/syft/syft/cataloging/filecataloging"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/filecataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 // CreateSBOMConfig specifies all parameters needed for creating an SBOM.
@@ -67,7 +67,7 @@ func syftVersion() string {
 	}
 
 	for _, d := range buildInfo.Deps {
-		if d.Path == "github.com/anchore/syft" && d.Version != "(devel)" {
+		if d.Path == "github.com/oligocybersecurity/syft" && d.Version != "(devel)" {
 			return d.Version
 		}
 	}

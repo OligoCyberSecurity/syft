@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/pkg/cataloger/golang"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/golang"
 )
 
 type golangConfig struct {

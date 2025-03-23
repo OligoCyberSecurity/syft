@@ -1,6 +1,6 @@
 package helpers
 
-import "github.com/anchore/syft/syft/pkg"
+import "github.com/oligocybersecurity/syft/syft/pkg"
 
 const NONE = "NONE"
 const NOASSERTION = "NOASSERTION"

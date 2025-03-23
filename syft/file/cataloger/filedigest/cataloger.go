@@ -9,13 +9,13 @@ import (
 	"github.com/dustin/go-humanize"
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/bus"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
-	intCataloger "github.com/anchore/syft/syft/file/cataloger/internal"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	"github.com/oligocybersecurity/syft/syft/file"
+	intCataloger "github.com/oligocybersecurity/syft/syft/file/cataloger/internal"
 )
 
 var ErrUndigestableFile = errors.New("undigestable file")

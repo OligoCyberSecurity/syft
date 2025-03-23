@@ -3,11 +3,11 @@ package integration
 import (
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
-func TestPhotonPackageRegression(t *testing.T) { // Regression: https://github.com/anchore/syft/pull/1997
+func TestPhotonPackageRegression(t *testing.T) { // Regression: https://github.com/oligocybersecurity/syft/pull/1997
 	sbom, _ := catalogFixtureImage(t, "image-photon-all-layers", source.AllLayersScope)
 	var packages []pkg.Package
 	for p := range sbom.Artifacts.Packages.Enumerate() {

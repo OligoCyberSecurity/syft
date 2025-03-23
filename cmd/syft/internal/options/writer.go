@@ -13,11 +13,11 @@ import (
 	"github.com/mitchellh/go-homedir"
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/syft/internal/bus"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/table"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/table"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ sbom.Writer = (*sbomMultiWriter)(nil)

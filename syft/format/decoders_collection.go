@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/format/internal/stream"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/format/internal/stream"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ sbom.FormatDecoder = (*DecoderCollection)(nil)

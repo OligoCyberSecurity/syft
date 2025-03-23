@@ -1,7 +1,7 @@
 package options
 
 import (
-	"github.com/anchore/syft/syft/format/spdxjson"
+	"github.com/oligocybersecurity/syft/syft/format/spdxjson"
 )
 
 type FormatSPDXJSON struct {

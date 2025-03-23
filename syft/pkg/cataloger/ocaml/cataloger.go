@@ -4,8 +4,8 @@ Package ocaml provides a concrete Cataloger implementation for packages relating
 package ocaml
 
 import (
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // NewOpamPackageManagerCataloger returns a new cataloger object for OCaml opam.

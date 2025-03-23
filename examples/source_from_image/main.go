@@ -7,7 +7,7 @@ import (
 
 	"github.com/anchore/stereoscope"
 	"github.com/anchore/stereoscope/pkg/image/oci"
-	"github.com/anchore/syft/syft/source/stereoscopesource"
+	"github.com/oligocybersecurity/syft/syft/source/stereoscopesource"
 )
 
 /*

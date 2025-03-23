@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
 )
 
 func Test_peHasEntrypoint(t *testing.T) {

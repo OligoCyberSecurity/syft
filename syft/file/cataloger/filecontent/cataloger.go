@@ -9,12 +9,12 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/bus"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event/monitor"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/bus"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 type Config struct {

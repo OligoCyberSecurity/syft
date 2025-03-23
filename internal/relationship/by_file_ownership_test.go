@@ -6,10 +6,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal/cmptest"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal/cmptest"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func TestOwnershipByFilesRelationship(t *testing.T) {

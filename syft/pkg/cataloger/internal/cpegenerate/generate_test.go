@@ -10,8 +10,8 @@ import (
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func keyValues(m map[string]string) []pkg.KeyValue {

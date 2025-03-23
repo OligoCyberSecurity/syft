@@ -3,8 +3,8 @@ package cpegenerate
 import (
 	"strings"
 
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 const jenkinsName = "jenkins"

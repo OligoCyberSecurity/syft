@@ -1,6 +1,6 @@
 package helpers
 
-import "github.com/anchore/syft/syft/pkg"
+import "github.com/oligocybersecurity/syft/syft/pkg"
 
 func Description(p pkg.Package) string {
 	if hasMetadata(p) {

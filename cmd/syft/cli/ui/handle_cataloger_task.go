@@ -9,9 +9,9 @@ import (
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
 	"github.com/anchore/bubbly/bubbles/tree"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/event/monitor"
-	syftEventParsers "github.com/anchore/syft/syft/event/parsers"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
+	syftEventParsers "github.com/oligocybersecurity/syft/syft/event/parsers"
 )
 
 // we standardize how rows are instantiated to ensure consistency in the appearance across the UI

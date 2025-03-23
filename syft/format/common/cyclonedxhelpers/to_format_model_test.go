@@ -9,12 +9,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/format/internal/cyclonedxutil/helpers"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/format/internal/cyclonedxutil/helpers"
+	"github.com/oligocybersecurity/syft/syft/linux"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_formatCPE(t *testing.T) {

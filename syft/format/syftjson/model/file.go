@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/license"
 )
 
 type File struct {

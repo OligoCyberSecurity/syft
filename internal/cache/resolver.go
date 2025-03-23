@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 // Resolver interface provides a single Resolve method, which will return from cache

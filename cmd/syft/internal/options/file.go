@@ -7,8 +7,8 @@ import (
 	"github.com/scylladb/go-set/strset"
 
 	"github.com/anchore/clio"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/syft/file"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 type fileConfig struct {

@@ -13,14 +13,14 @@ import (
 	"github.com/opencontainers/go-digest"
 
 	stereoFile "github.com/anchore/stereoscope/pkg/file"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/directorysource"
-	"github.com/anchore/syft/syft/source/internal"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/fileresolver"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/directorysource"
+	"github.com/oligocybersecurity/syft/syft/source/internal"
 )
 
 var _ source.Source = (*fileSource)(nil)

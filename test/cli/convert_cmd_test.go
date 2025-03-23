@@ -7,12 +7,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/cyclonedxjson"
-	"github.com/anchore/syft/syft/format/cyclonedxxml"
-	"github.com/anchore/syft/syft/format/spdxjson"
-	"github.com/anchore/syft/syft/format/spdxtagvalue"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxjson"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxxml"
+	"github.com/oligocybersecurity/syft/syft/format/spdxjson"
+	"github.com/oligocybersecurity/syft/syft/format/spdxtagvalue"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func TestConvertCmd(t *testing.T) {

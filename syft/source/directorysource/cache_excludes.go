@@ -4,9 +4,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/anchore/syft/internal/cache"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/internal/fileresolver"
+	"github.com/oligocybersecurity/syft/internal/cache"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/internal/fileresolver"
 )
 
 // we do not want to cache things and then subsequently scan them, if, for example a user runs `syft /` twice

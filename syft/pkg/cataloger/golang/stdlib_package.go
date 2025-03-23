@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func stdlibProcessor(pkgs []pkg.Package, relationships []artifact.Relationship, err error) ([]pkg.Package, []artifact.Relationship, error) {

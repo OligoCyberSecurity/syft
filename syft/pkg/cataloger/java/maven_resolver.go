@@ -18,10 +18,10 @@ import (
 
 	"github.com/vifraa/gopom"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/cache"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/cache"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 // mavenID is the unique identifier for a package in Maven

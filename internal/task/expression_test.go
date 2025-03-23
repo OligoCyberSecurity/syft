@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
 )
 
 func Test_newExpressionsFromSelectionRequest(t *testing.T) {

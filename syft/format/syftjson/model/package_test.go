@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/license"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func Test_UnmarshalJSON(t *testing.T) {
@@ -436,7 +436,7 @@ func Test_UnmarshalJSON(t *testing.T) {
 			name: "pre key-value golang metadata",
 			packageData: []byte(`{
   "id": "e348ed25484a94c9",
-  "name": "github.com/anchore/syft",
+  "name": "github.com/oligocybersecurity/syft",
   "version": "v0.101.1-SNAPSHOT-4c777834",
   "type": "go-module",
   "foundBy": "go-module-binary-cataloger",
@@ -455,7 +455,7 @@ func Test_UnmarshalJSON(t *testing.T) {
   "cpes": [
     "cpe:2.3:a:anchore:syft:v0.101.1-SNAPSHOT-4c777834:*:*:*:*:*:*:*"
   ],
-  "purl": "pkg:golang/github.com/anchore/syft@v0.101.1-SNAPSHOT-4c777834",
+  "purl": "pkg:golang/github.com/oligocybersecurity/syft@v0.101.1-SNAPSHOT-4c777834",
   "metadataType": "go-module-buildinfo-entry",
   "metadata": {
     "goBuildSettings": {
@@ -473,7 +473,7 @@ func Test_UnmarshalJSON(t *testing.T) {
     },
     "goCompiledVersion": "go1.21.2",
     "architecture": "amd64",
-    "mainModule": "github.com/anchore/syft"
+    "mainModule": "github.com/oligocybersecurity/syft"
   }
 }
 `),

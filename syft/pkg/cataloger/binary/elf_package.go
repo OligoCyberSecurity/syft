@@ -2,9 +2,9 @@ package binary
 
 import (
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func newELFPackage(metadata elfBinaryPackageNotes, locations file.LocationSet) pkg.Package {

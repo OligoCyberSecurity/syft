@@ -6,11 +6,11 @@ package redhat
 import (
 	"database/sql"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/dependency"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/dependency"
 )
 
 // NewDBCataloger returns a new RPM DB cataloger object.

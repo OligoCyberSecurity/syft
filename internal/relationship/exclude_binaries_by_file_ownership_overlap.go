@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"slices"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var (
@@ -104,7 +104,7 @@ func identifyOverlappingJVMRelationship(parent *pkg.Package, child *pkg.Package)
 }
 
 // identifyOverlappingOSRelationship indicates the package ID to remove if this is an OS pkg -> bin pkg relationship.
-// This was implemented as a way to help resolve: https://github.com/anchore/syft/issues/931
+// This was implemented as a way to help resolve: https://github.com/oligocybersecurity/syft/issues/931
 func identifyOverlappingOSRelationship(parent *pkg.Package, child *pkg.Package) artifact.ID {
 	if !slices.Contains(osCatalogerTypes, parent.Type) {
 		return ""

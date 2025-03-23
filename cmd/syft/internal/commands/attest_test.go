@@ -18,10 +18,10 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/clio/cliotestutils"
-	"github.com/anchore/syft/cmd/syft/internal"
-	"github.com/anchore/syft/cmd/syft/internal/options"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_writeSBOMToFormattedFile(t *testing.T) {

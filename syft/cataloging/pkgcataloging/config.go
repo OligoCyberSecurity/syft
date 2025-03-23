@@ -1,12 +1,12 @@
 package pkgcataloging
 
 import (
-	"github.com/anchore/syft/syft/pkg/cataloger/binary"
-	"github.com/anchore/syft/syft/pkg/cataloger/golang"
-	"github.com/anchore/syft/syft/pkg/cataloger/java"
-	"github.com/anchore/syft/syft/pkg/cataloger/javascript"
-	"github.com/anchore/syft/syft/pkg/cataloger/kernel"
-	"github.com/anchore/syft/syft/pkg/cataloger/python"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/golang"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/java"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/javascript"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/kernel"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/python"
 )
 
 type Config struct {

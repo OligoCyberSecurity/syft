@@ -7,7 +7,7 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/fangs"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ interface {

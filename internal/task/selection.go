@@ -6,8 +6,8 @@ import (
 
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
 )
 
 // Selection represents the users request for a subset of tasks to run and the resulting set of task names that were

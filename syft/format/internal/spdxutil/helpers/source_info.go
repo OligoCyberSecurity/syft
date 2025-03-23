@@ -3,7 +3,7 @@ package helpers
 import (
 	"strings"
 
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 //nolint:funlen, gocyclo

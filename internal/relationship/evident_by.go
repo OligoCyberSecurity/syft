@@ -1,8 +1,8 @@
 package relationship
 
 import (
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func EvidentBy(catalog *pkg.Collection) []artifact.Relationship {

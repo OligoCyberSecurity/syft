@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/directorysource"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/directorysource"
 )
 
 func TestIdentifyRelease(t *testing.T) {

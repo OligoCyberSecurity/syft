@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/cpegenerate/dictionary"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/cpegenerate/dictionary"
 )
 
 func Test_generateIndexedDictionaryJSON(t *testing.T) {

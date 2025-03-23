@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/pkg/cataloger/java"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/java"
 )
 
 type javaConfig struct {

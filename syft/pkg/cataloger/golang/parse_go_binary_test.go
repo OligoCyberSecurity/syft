@@ -17,11 +17,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	"github.com/anchore/syft/syft/internal/unionreader"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/fileresolver"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/pkgtest"
 )
 
 // make will run the default make target for the given test fixture path
@@ -146,11 +146,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 	}
 
 	unmodifiedMain := pkg.Package{
-		Name:     "github.com/anchore/syft",
+		Name:     "github.com/oligocybersecurity/syft",
 		Language: pkg.Go,
 		Type:     pkg.GoModulePkg,
 		Version:  "(devel)",
-		PURL:     "pkg:golang/github.com/anchore/syft@(devel)",
+		PURL:     "pkg:golang/github.com/oligocybersecurity/syft@(devel)",
 		Locations: file.NewLocationSet(
 			file.NewLocationFromCoordinates(
 				file.Coordinates{
@@ -163,7 +163,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			GoCompiledVersion: goCompiledVersion,
 			Architecture:      archDetails,
 			BuildSettings:     defaultBuildSettings,
-			MainModule:        "github.com/anchore/syft",
+			MainModule:        "github.com/oligocybersecurity/syft",
 		},
 	}
 
@@ -316,7 +316,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -333,7 +333,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -348,11 +348,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.0.0-20221014195457-41bc6bb41035",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.0.0-20221014195457-41bc6bb41035",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.0.0-20221014195457-41bc6bb41035",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -390,7 +390,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 								Value: `build	-ldflags="-w -s -extldflags '-static' -X blah=foobar`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -400,14 +400,14 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
 						{Key: "GOAMD64", Value: "v1"},
 						{Key: "vcs.revision", Value: "41bc6bb410352845f22766e27dd48ba93aa825a4"},
 						{Key: "vcs.time", Value: "2022-10-14T19:54:57Z"},
-						{Key: "-ldflags", Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`},
+						{Key: "-ldflags", Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/oligocybersecurity/syft/internal/version.version=0.79.0`},
 					},
 				},
 				cryptoSettings: nil,
@@ -415,11 +415,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.79.0",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.79.0",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -454,10 +454,10 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							},
 							{
 								Key:   "-ldflags",
-								Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`,
+								Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/oligocybersecurity/syft/internal/version.version=0.79.0`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -467,12 +467,12 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
 						{Key: "GOAMD64", Value: "v1"},
-						{Key: "-ldflags", Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`},
+						{Key: "-ldflags", Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/oligocybersecurity/syft/internal/version.version=0.79.0`},
 					},
 				},
 				cryptoSettings: nil,
@@ -480,11 +480,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.79.0",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.79.0",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -511,10 +511,10 @@ func TestBuildGoPkgInfo(t *testing.T) {
 							},
 							{
 								Key:   "-ldflags",
-								Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0`,
+								Value: `build	-ldflags="-w -s -extldflags '-static' -X github.com/oligocybersecurity/syft/internal/version.version=0.79.0`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -524,7 +524,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -537,11 +537,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.79.0",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.79.0",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -571,7 +571,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 								Value: `build	-ldflags="-w -s -extldflags '-static' -X main.version=0.79.0`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -581,7 +581,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -594,11 +594,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.79.0",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.79.0",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.79.0",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -628,7 +628,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 								Value: `build	-ldflags="-w -s -extldflags '-static' -X main.Version=0.79.0`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -638,7 +638,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -652,11 +652,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			},
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v0.0.0-20221014195457-41bc6bb41035",
-					PURL:     "pkg:golang/github.com/anchore/syft@v0.0.0-20221014195457-41bc6bb41035",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v0.0.0-20221014195457-41bc6bb41035",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -690,7 +690,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 								Value: "2022-10-14T19:54:57Z",
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -700,7 +700,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -741,7 +741,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:VSVdnH7cQ7V+B33qSJHTCRlNgra1607Q8PzEmnvb2Ic=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/oligocybersecurity/syft",
 					},
 				},
 				{
@@ -762,7 +762,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:DYssiUV1pBmKqzKsm4mqXx8artqC0Q8HgZsVI3lMsAg=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/oligocybersecurity/syft",
 					},
 				},
 				unmodifiedMain,
@@ -773,7 +773,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -819,7 +819,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:PjhxBct4MZii8FFR8+oeS7QOvxKOTZXgk63EU2XpfJE=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/oligocybersecurity/syft",
 					}},
 				{
 					Name:     "golang.org/x/term",
@@ -839,7 +839,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 						GoCompiledVersion: goCompiledVersion,
 						Architecture:      archDetails,
 						H1Digest:          "h1:Ihq/mm/suC88gF8WFcVwk+OV6Tq+wyA1O0E5UEvDglI=",
-						MainModule:        "github.com/anchore/syft",
+						MainModule:        "github.com/oligocybersecurity/syft",
 					},
 				},
 				unmodifiedMain,
@@ -850,7 +850,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: goCompiledVersion,
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -865,11 +865,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			binaryContent: "\x00v1.0.0-somethingelse+incompatible\x00",
 			expected: []pkg.Package{
 				{
-					Name:     "github.com/anchore/syft",
+					Name:     "github.com/oligocybersecurity/syft",
 					Language: pkg.Go,
 					Type:     pkg.GoModulePkg,
 					Version:  "v1.0.0-somethingelse+incompatible",
-					PURL:     "pkg:golang/github.com/anchore/syft@v1.0.0-somethingelse%2Bincompatible",
+					PURL:     "pkg:golang/github.com/oligocybersecurity/syft@v1.0.0-somethingelse%2Bincompatible",
 					Locations: file.NewLocationSet(
 						file.NewLocationFromCoordinates(
 							file.Coordinates{
@@ -903,7 +903,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 								Value: `build	-ldflags="-w -s -extldflags '-static' -X blah=foobar`,
 							},
 						},
-						MainModule: "github.com/anchore/syft",
+						MainModule: "github.com/oligocybersecurity/syft",
 					},
 				},
 			},
@@ -913,7 +913,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 			mod: &extendedBuildInfo{
 				BuildInfo: &debug.BuildInfo{
 					GoVersion: "go1.22.2 X:nocoverageredesign,noallocheaders,noexectracer2",
-					Main:      debug.Module{Path: "github.com/anchore/syft", Version: "(devel)"},
+					Main:      debug.Module{Path: "github.com/oligocybersecurity/syft", Version: "(devel)"},
 					Settings: []debug.BuildSetting{
 						{Key: "GOARCH", Value: archDetails},
 						{Key: "GOOS", Value: "darwin"},
@@ -924,11 +924,11 @@ func TestBuildGoPkgInfo(t *testing.T) {
 				arch:           archDetails,
 			},
 			expected: []pkg.Package{{
-				Name:     "github.com/anchore/syft",
+				Name:     "github.com/oligocybersecurity/syft",
 				Language: pkg.Go,
 				Type:     pkg.GoModulePkg,
 				Version:  "(devel)",
-				PURL:     "pkg:golang/github.com/anchore/syft@(devel)",
+				PURL:     "pkg:golang/github.com/oligocybersecurity/syft@(devel)",
 				Locations: file.NewLocationSet(
 					file.NewLocationFromCoordinates(
 						file.Coordinates{
@@ -941,7 +941,7 @@ func TestBuildGoPkgInfo(t *testing.T) {
 					GoCompiledVersion: "go1.22.2",
 					Architecture:      archDetails,
 					BuildSettings:     defaultBuildSettings,
-					MainModule:        "github.com/anchore/syft",
+					MainModule:        "github.com/oligocybersecurity/syft",
 					GoExperiments:     []string{"nocoverageredesign", "noallocheaders", "noexectracer2"},
 				},
 			}},
@@ -1079,8 +1079,8 @@ func Test_extractVersionFromLDFlags(t *testing.T) {
 		},
 		{
 			name:             "syft ldflags",
-			mainModule:       "github.com/anchore/syft",
-			ldflags:          `	build	-ldflags="-w -s -extldflags '-static' -X github.com/anchore/syft/internal/version.version=0.79.0 -X github.com/anchore/syft/internal/version.gitCommit=b2b332e8b2b66af0905e98b54ebd713a922be1a8 -X github.com/anchore/syft/internal/version.buildDate=2023-04-21T16:20:25Z -X github.com/anchore/syft/internal/version.gitDescription=v0.79.0 "`,
+			mainModule:       "github.com/oligocybersecurity/syft",
+			ldflags:          `	build	-ldflags="-w -s -extldflags '-static' -X github.com/oligocybersecurity/syft/internal/version.version=0.79.0 -X github.com/oligocybersecurity/syft/internal/version.gitCommit=b2b332e8b2b66af0905e98b54ebd713a922be1a8 -X github.com/oligocybersecurity/syft/internal/version.buildDate=2023-04-21T16:20:25Z -X github.com/oligocybersecurity/syft/internal/version.gitDescription=v0.79.0 "`,
 			wantMajorVersion: "0",
 			wantFullVersion:  "v0.79.0",
 		},

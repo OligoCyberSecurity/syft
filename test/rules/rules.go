@@ -26,7 +26,7 @@ func isPtr(ctx *dsl.VarFilterContext) bool {
 
 // nolint:unused
 func packagesInRelationshipsAsValues(m dsl.Matcher) {
-	m.Import("github.com/anchore/syft/syft/artifact")
+	m.Import("github.com/oligocybersecurity/syft/syft/artifact")
 
 	isRelationship := func(m dsl.Matcher) bool {
 		return m["x"].Type.Is("artifact.Relationship")

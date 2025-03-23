@@ -12,8 +12,8 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	syftEvent "github.com/anchore/syft/syft/event"
-	"github.com/anchore/syft/syft/event/monitor"
+	syftEvent "github.com/oligocybersecurity/syft/syft/event"
+	"github.com/oligocybersecurity/syft/syft/event/monitor"
 )
 
 func TestHandler_handleAttestationStarted(t *testing.T) {

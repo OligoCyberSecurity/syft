@@ -13,12 +13,12 @@ import (
 
 	"github.com/anchore/packageurl-go"
 	stereoFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 const (
@@ -110,7 +110,7 @@ func parseJVMRelease(_ context.Context, resolver file.Resolver, _ *generic.Envir
 
 func jvmLicenses(_ file.Resolver, _ *pkg.JavaVMRelease) pkg.LicenseSet {
 	// TODO: get this from the dir(<RELEASE>)/legal/**/LICENSE files when we start cataloging license content
-	// see https://github.com/anchore/syft/issues/656
+	// see https://github.com/oligocybersecurity/syft/issues/656
 	return pkg.NewLicenseSet()
 }
 
@@ -184,7 +184,7 @@ func jvmPrimaryVendorProduct(implementor, path, imageType string, hasJdk bool) (
 }
 
 func jvmCpes(version, primaryVendor, primaryProduct, imageType string, hasJdk bool) []cpe.CPE {
-	// see https://github.com/anchore/syft/issues/2422 for more context
+	// see https://github.com/oligocybersecurity/syft/issues/2422 for more context
 
 	var candidates []jvmCpeInfo
 

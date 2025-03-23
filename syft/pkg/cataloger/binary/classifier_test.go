@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func Test_ClassifierCPEs(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	"github.com/anmitsu/go-shlex"
 	"github.com/spf13/cobra"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/ui"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/ui"
 )
 
 func AddSnippet(appConfig config.Application) *cobra.Command {

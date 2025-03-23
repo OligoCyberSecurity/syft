@@ -14,11 +14,11 @@ import (
 
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/directorysource"
-	"github.com/anchore/syft/syft/source/stereoscopesource"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/directorysource"
+	"github.com/oligocybersecurity/syft/syft/source/stereoscopesource"
 )
 
 func testDigests(t testing.TB, root string, files []string, hashes ...crypto.Hash) map[file.Coordinates][]file.Digest {

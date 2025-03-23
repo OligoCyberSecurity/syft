@@ -16,13 +16,13 @@ import (
 
 	"github.com/anchore/packageurl-go"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/testutil"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/directorysource"
-	"github.com/anchore/syft/syft/source/stereoscopesource"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/testutil"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/directorysource"
+	"github.com/oligocybersecurity/syft/syft/source/stereoscopesource"
 )
 
 var mustUseOriginalBinaries = flag.Bool("must-use-original-binaries", false, "force the use of binaries for testing (instead of snippets)")

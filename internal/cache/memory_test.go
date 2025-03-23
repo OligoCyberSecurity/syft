@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal"
+	"github.com/oligocybersecurity/syft/internal"
 )
 
 func Test_NewInMemory(t *testing.T) {

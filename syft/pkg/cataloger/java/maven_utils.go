@@ -11,8 +11,8 @@ import (
 
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 // defaultMavenLocalRepoDir gets default location of the Maven local repository, generally at <USER HOME DIR>/.m2/repository

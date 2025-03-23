@@ -5,9 +5,9 @@ import (
 
 	"github.com/magiconair/properties/assert"
 
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func TestNewBuilder(t *testing.T) {

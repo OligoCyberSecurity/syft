@@ -9,14 +9,14 @@ import (
 	"github.com/CycloneDX/cyclonedx-go"
 	"github.com/google/uuid"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/format/internal/cyclonedxutil/helpers"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/format/internal/cyclonedxutil/helpers"
+	"github.com/oligocybersecurity/syft/syft/linux"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func ToFormatModel(s sbom.SBOM) *cyclonedx.BOM {

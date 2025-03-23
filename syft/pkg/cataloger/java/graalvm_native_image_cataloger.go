@@ -14,14 +14,14 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/mimetype"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cpe"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/unionreader"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/mimetype"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 type nativeImageCycloneDX struct {

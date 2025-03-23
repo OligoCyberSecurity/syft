@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 // GetSource uses all of Syft's known source providers to attempt to resolve the user input to a usable source.Source

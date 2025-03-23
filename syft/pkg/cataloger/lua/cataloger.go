@@ -4,8 +4,8 @@ Package lua provides a concrete Cataloger implementation for packages relating t
 package lua
 
 import (
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // NewPackageCataloger returns a new cataloger object for Lua ROck.

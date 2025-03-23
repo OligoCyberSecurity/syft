@@ -12,9 +12,9 @@ import (
 
 	"github.com/anchore/stereoscope"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/internal/testutil"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/internal/testutil"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func Test_StereoscopeImage_Exclusions(t *testing.T) {

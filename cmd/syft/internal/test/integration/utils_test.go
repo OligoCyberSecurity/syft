@@ -8,11 +8,11 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/stereoscope/pkg/imagetest"
-	"github.com/anchore/syft/cmd/syft/internal/options"
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/syft"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func catalogFixtureImage(t *testing.T, fixtureImageName string, scope source.Scope, catalogerSelection ...string) (sbom.SBOM, source.Source) {

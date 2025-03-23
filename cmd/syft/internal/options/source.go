@@ -8,7 +8,7 @@ import (
 	"github.com/scylladb/go-set/strset"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/source/sourceproviders"
+	"github.com/oligocybersecurity/syft/syft/source/sourceproviders"
 )
 
 type sourceConfig struct {

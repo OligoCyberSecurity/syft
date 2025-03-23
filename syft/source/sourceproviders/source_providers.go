@@ -4,10 +4,10 @@ import (
 	"github.com/anchore/go-collections"
 	"github.com/anchore/stereoscope"
 	"github.com/anchore/stereoscope/pkg/image"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/directorysource"
-	"github.com/anchore/syft/syft/source/filesource"
-	"github.com/anchore/syft/syft/source/stereoscopesource"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/directorysource"
+	"github.com/oligocybersecurity/syft/syft/source/filesource"
+	"github.com/oligocybersecurity/syft/syft/source/stereoscopesource"
 )
 
 const (

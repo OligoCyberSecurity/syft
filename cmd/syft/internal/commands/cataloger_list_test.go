@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var _ interface {

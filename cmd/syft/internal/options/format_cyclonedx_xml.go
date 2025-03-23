@@ -1,7 +1,7 @@
 package options
 
 import (
-	"github.com/anchore/syft/syft/format/cyclonedxxml"
+	"github.com/oligocybersecurity/syft/syft/format/cyclonedxxml"
 )
 
 type FormatCyclonedxXML struct {

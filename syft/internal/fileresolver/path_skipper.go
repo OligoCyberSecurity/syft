@@ -8,7 +8,7 @@ import (
 
 	"github.com/moby/sys/mountinfo"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 type pathSkipper struct {

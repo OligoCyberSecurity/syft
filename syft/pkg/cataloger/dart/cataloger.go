@@ -4,8 +4,8 @@ Package dart provides a concrete Cataloger implementations for the Dart language
 package dart
 
 import (
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // NewPubspecLockCataloger returns a new Dartlang cataloger object base on pubspec lock files.

@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func TestWarCatalogedCorrectlyIfRenamed(t *testing.T) {

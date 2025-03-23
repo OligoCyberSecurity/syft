@@ -8,7 +8,7 @@ import (
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/afero"
 
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func NewSourceProvider(path string, exclude source.ExcludeConfig, digestAlgorithms []crypto.Hash, alias source.Alias) source.Provider {
