@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func TestSbomMetadataComponent(t *testing.T) {

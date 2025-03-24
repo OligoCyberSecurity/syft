@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal"
+	"github.com/oligocybersecurity/syft/internal"
 )
 
 func Test_getUtf8Reader(t *testing.T) {
@@ -39,7 +39,7 @@ func Test_getUtf8Reader(t *testing.T) {
 }
 
 func Test_decodePomXML_surviveNonUtf8Encoding(t *testing.T) {
-	// regression for https://github.com/anchore/syft/issues/2044
+	// regression for https://github.com/oligocybersecurity/syft/issues/2044
 
 	// we are storing the base64 contents of the pom.xml file. We are doing this to prevent accidental changes to the
 	// file, which is extremely important for this test.

@@ -4,8 +4,8 @@ Package swipl provides a Cataloger implementation relating to packages within th
 package swipl
 
 import (
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // NewSwiplPackCataloger returns a new SWI Prolog Pack package manager cataloger object.

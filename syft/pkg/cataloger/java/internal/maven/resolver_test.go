@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/internal/fileresolver"
-	maventest "github.com/anchore/syft/syft/pkg/cataloger/java/internal/maven/test"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/internal/fileresolver"
+	maventest "github.com/oligocybersecurity/syft/syft/pkg/cataloger/java/internal/maven/test"
 )
 
 func Test_resolveProperty(t *testing.T) {

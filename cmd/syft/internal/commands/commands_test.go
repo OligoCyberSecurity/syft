@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	gologgerredact "github.com/anchore/go-logger/adapter/redact"
-	"github.com/anchore/syft/internal/redact"
+	"github.com/oligocybersecurity/syft/internal/redact"
 )
 
 func TestMain(m *testing.M) {

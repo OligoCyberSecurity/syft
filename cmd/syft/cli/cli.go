@@ -8,8 +8,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/cmd/syft/internal"
-	"github.com/anchore/syft/cmd/syft/internal/commands"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/commands"
 )
 
 // Application constructs the `syft packages` command and aliases the root command to `syft packages`.

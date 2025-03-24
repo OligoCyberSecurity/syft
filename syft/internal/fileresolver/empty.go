@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var _ file.WritableResolver = (*Empty)(nil)

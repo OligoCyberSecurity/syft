@@ -15,8 +15,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/task"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/internal/task"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
 )
 
 func TestAllPackageCatalogersReachableInTasks(t *testing.T) {

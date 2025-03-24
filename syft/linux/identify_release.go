@@ -10,9 +10,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 
 	"github.com/anchore/go-logger"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 // returns a distro or nil

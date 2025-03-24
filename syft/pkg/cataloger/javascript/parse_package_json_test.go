@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/pkgtest"
 )
 
 func TestParsePackageJSON(t *testing.T) {
@@ -217,7 +217,7 @@ func Test_corruptPackageJSON(t *testing.T) {
 		TestParser(t, parsePackageJSON)
 }
 
-func TestParsePackageJSON_Partial(t *testing.T) { // see https://github.com/anchore/syft/issues/311
+func TestParsePackageJSON_Partial(t *testing.T) { // see https://github.com/oligocybersecurity/syft/issues/311
 	const fixtureFile = "test-fixtures/pkg-json/package-partial.json"
 
 	// raise package.json files as packages with any information we find, these will be filtered out

@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/go-homedir"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func Test_MakeSBOMWriter(t *testing.T) {

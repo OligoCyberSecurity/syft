@@ -4,8 +4,8 @@ Package swift provides a concrete Cataloger implementation relating to packages 
 package swift
 
 import (
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // NewSwiftPackageManagerCataloger returns a new Swift package manager cataloger object.

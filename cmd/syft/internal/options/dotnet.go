@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/pkg/cataloger/dotnet"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/dotnet"
 )
 
 type dotnetConfig struct {

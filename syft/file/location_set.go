@@ -5,7 +5,7 @@ import (
 
 	"github.com/gohugoio/hashstructure"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 type LocationSet struct {

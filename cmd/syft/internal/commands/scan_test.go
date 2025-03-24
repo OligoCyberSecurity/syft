@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/cmd/syft/internal/options"
+	"github.com/oligocybersecurity/syft/cmd/syft/internal/options"
 )
 
 func Test_scanOptions_validateLegacyOptionsNotUsed(t *testing.T) {

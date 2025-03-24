@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal/spdxlicense"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal/spdxlicense"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func Test_License(t *testing.T) {

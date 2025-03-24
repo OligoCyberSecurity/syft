@@ -8,10 +8,10 @@ import (
 
 	spdxJson "github.com/spdx/tools-golang/json"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/format/common/spdxhelpers"
-	"github.com/anchore/syft/syft/format/internal/stream"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/format/common/spdxhelpers"
+	"github.com/oligocybersecurity/syft/syft/format/internal/stream"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 var _ sbom.FormatDecoder = (*decoder)(nil)

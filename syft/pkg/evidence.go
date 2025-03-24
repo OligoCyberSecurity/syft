@@ -1,6 +1,6 @@
 package pkg
 
-import "github.com/anchore/syft/internal/evidence"
+import "github.com/oligocybersecurity/syft/internal/evidence"
 
 const (
 	EvidenceAnnotationKey        = evidence.AnnotationKey

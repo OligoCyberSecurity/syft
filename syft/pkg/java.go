@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var jenkinsPluginPomPropertiesGroupIDs = []string{

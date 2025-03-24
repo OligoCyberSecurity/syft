@@ -8,10 +8,10 @@ import (
 
 	"github.com/kastenhq/goversion/version"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/unknown"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/unknown"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
 )
 
 type extendedBuildInfo struct {

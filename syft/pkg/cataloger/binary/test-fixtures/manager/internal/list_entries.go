@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/binary/test-fixtures/manager/internal/config"
 )
 
 type Entries map[LogicalEntryKey]EntryInfo

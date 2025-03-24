@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var _ Task = (*mockTask)(nil)

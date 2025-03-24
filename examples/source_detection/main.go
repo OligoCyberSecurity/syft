@@ -7,9 +7,9 @@ import (
 
 	"github.com/anchore/go-collections"
 	"github.com/anchore/stereoscope"
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/source"
-	"github.com/anchore/syft/syft/source/sourceproviders"
+	"github.com/oligocybersecurity/syft/syft"
+	"github.com/oligocybersecurity/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/source/sourceproviders"
 )
 
 /*

@@ -13,8 +13,8 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/go-homedir"
-	"github.com/anchore/syft/internal/cache"
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/cache"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 // Cache provides configuration for the Syft caching behavior

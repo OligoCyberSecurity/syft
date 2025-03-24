@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/go-homedir"
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/cache"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/cache"
 )
 
 func Test_defaultDir(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 const manifestGlob = "/META-INF/MANIFEST.MF"

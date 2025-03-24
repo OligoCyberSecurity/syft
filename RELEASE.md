@@ -2,7 +2,7 @@
 
 A release of syft comprises:
 - a new semver git tag from the current tip of the main branch
-- a new [github release](https://github.com/anchore/syft/releases) with a changelog and archived binary assets
+- a new [github release](https://github.com/oligocybersecurity/syft/releases) with a changelog and archived binary assets
 - docker images published to `ghcr.io` and `dockerhub`, including multi architecture images + manifest
 - [`anchore/homebrew-syft`](https://github.com/anchore/homebrew-syft) tap updated to point to assets in the latest github release
 
@@ -20,7 +20,7 @@ This release process itself should be as automated as possible, and has only a f
   you can abort and adjust the labels on the PRs and issues to be included in the release and
   re-run the release trigger command.
 
-1. A release admin must approve the release on the GitHub Actions [release pipeline](https://github.com/anchore/syft/actions/workflows/release.yaml) run page.
+1. A release admin must approve the release on the GitHub Actions [release pipeline](https://github.com/oligocybersecurity/syft/actions/workflows/release.yaml) run page.
    Once approved, the release pipeline will generate all assets and publish a GitHub Release.
 
    

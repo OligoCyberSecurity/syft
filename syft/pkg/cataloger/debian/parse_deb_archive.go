@@ -13,12 +13,12 @@ import (
 	"github.com/blakesmith/ar"
 	"github.com/mholt/archives"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/unknown"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/unknown"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
 )
 
 // parseDebArchive parses a Debian package archive (.deb) file and returns the packages it contains.

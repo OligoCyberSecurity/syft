@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/anchore/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format"
 )
 
 //go:embed alpine.syft.json

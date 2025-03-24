@@ -10,7 +10,7 @@ import (
 
 	"github.com/anchore/clio"
 	stereoscopeFile "github.com/anchore/stereoscope/pkg/file"
-	"github.com/anchore/syft/syft/source/sourceproviders"
+	"github.com/oligocybersecurity/syft/syft/source/sourceproviders"
 )
 
 type sourceConfig struct {

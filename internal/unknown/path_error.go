@@ -3,8 +3,8 @@ package unknown
 import (
 	"regexp"
 
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 var pathErrorRegex = regexp.MustCompile(`.*path="([^"]+)".*`)

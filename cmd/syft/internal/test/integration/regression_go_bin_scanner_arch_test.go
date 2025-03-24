@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func TestRegressionGoArchDiscovery(t *testing.T) {

@@ -8,14 +8,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/anchore/syft/internal"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/mimetype"
-	"github.com/anchore/syft/internal/unknown"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/unionreader"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/internal"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/mimetype"
+	"github.com/oligocybersecurity/syft/internal/unknown"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/unionreader"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 var _ pkg.Cataloger = (*elfPackageCataloger)(nil)
@@ -25,7 +25,7 @@ type elfPackageCataloger struct {
 
 // TODO: for now this accounts for a single data shape from the .note.package section of an ELF binary.
 // In the future, this should be generalized to support multiple data shapes, including non-json data.
-// For example, fedora includes an ELF section header as a prefix to the JSON payload: https://github.com/anchore/syft/issues/2713
+// For example, fedora includes an ELF section header as a prefix to the JSON payload: https://github.com/oligocybersecurity/syft/issues/2713
 
 type elfBinaryPackageNotes struct {
 	Name                                string `json:"name"`

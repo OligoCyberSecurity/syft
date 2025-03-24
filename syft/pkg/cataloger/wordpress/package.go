@@ -1,8 +1,8 @@
 package wordpress
 
 import (
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func newWordpressPluginPackage(name, version string, m pluginData, location file.Location) pkg.Package {

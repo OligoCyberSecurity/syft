@@ -6,7 +6,7 @@ import (
 
 	"github.com/CycloneDX/cyclonedx-go"
 
-	"github.com/anchore/syft/syft/format/internal/stream"
+	"github.com/oligocybersecurity/syft/syft/format/internal/stream"
 )
 
 type Decoder struct {

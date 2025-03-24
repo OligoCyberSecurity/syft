@@ -4,16 +4,16 @@ import (
 	"context"
 	"crypto"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/cataloging/filecataloging"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/file/cataloger/executable"
-	"github.com/anchore/syft/syft/file/cataloger/filecontent"
-	"github.com/anchore/syft/syft/file/cataloger/filedigest"
-	"github.com/anchore/syft/syft/file/cataloger/filemetadata"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/cataloging/filecataloging"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file/cataloger/executable"
+	"github.com/oligocybersecurity/syft/syft/file/cataloger/filecontent"
+	"github.com/oligocybersecurity/syft/syft/file/cataloger/filedigest"
+	"github.com/oligocybersecurity/syft/syft/file/cataloger/filemetadata"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
 )
 
 func DefaultFileTaskFactories() Factories {

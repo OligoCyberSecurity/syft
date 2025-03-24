@@ -7,7 +7,7 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/anchore/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/log"
 )
 
 // CloseAndLogError closes the given io.Closer and reports any errors found as a warning in the log

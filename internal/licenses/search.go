@@ -7,9 +7,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/license"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 const (

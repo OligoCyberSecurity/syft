@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"reflect"
 
-	"github.com/anchore/syft/syft/cataloging"
-	"github.com/anchore/syft/syft/cataloging/filecataloging"
-	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/filecataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging/pkgcataloging"
 )
 
 // configurationAuditTrail is all input configuration was used to generate the SBOM

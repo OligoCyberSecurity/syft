@@ -30,7 +30,7 @@ test_download_release_asset() {
 # always test against the latest release
 release=$(get_release_tag "${OWNER}" "${REPO}" "latest" )
 
-# exercise all possible assets against a real github release (based on asset listing from https://github.com/anchore/syft/releases/tag/v0.36.0)
+# exercise all possible assets against a real github release (based on asset listing from https://github.com/oligocybersecurity/syft/releases/tag/v0.36.0)
 
 # verify all downloads against the checksums file + checksums file signature
 VERIFY_SIGN=true

@@ -7,8 +7,8 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
 )
 
 func Test_packageURL(t *testing.T) {
@@ -20,7 +20,7 @@ func Test_packageURL(t *testing.T) {
 		{
 			name: "elf-binary-package-cataloger",
 			metadata: elfBinaryPackageNotes{
-				Name:    "github.com/anchore/syft",
+				Name:    "github.com/oligocybersecurity/syft",
 				Version: "v0.1.0",
 				ELFBinaryPackageNoteJSONPayload: pkg.ELFBinaryPackageNoteJSONPayload{
 					System: "syftsys",

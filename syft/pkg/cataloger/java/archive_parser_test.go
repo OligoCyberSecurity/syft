@@ -20,14 +20,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/license"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
-	"github.com/anchore/syft/syft/pkg/cataloger/java/internal/maven"
-	maventest "github.com/anchore/syft/syft/pkg/cataloger/java/internal/maven/test"
+	"github.com/oligocybersecurity/syft/internal/licenses"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/license"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/java/internal/maven"
+	maventest "github.com/oligocybersecurity/syft/syft/pkg/cataloger/java/internal/maven/test"
 )
 
 func TestSearchMavenForLicenses(t *testing.T) {

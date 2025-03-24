@@ -1,6 +1,6 @@
 package file
 
-import "github.com/anchore/syft/internal/evidence"
+import "github.com/oligocybersecurity/syft/internal/evidence"
 
 type Locations []Location
 

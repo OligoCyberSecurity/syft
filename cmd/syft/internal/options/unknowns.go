@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
 )
 
 type unknownsConfig struct {

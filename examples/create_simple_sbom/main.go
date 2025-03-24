@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/anchore/syft/syft"
-	"github.com/anchore/syft/syft/format"
-	"github.com/anchore/syft/syft/format/syftjson"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft"
+	"github.com/oligocybersecurity/syft/syft/format"
+	"github.com/oligocybersecurity/syft/syft/format/syftjson"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 const defaultImage = "alpine:3.19"

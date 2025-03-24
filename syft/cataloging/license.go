@@ -1,6 +1,6 @@
 package cataloging
 
-import "github.com/anchore/syft/internal/licenses"
+import "github.com/oligocybersecurity/syft/internal/licenses"
 
 type LicenseConfig struct {
 	IncludeUnkownLicenseContent bool    `json:"include-unknown-license-content" yaml:"include-unknown-license-content" mapstructure:"include-unknown-license-content"`

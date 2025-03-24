@@ -12,16 +12,16 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/anchore/syft/internal"
-	intFile "github.com/anchore/syft/internal/file"
-	"github.com/anchore/syft/internal/licenses"
-	"github.com/anchore/syft/internal/log"
-	"github.com/anchore/syft/internal/unknown"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/pkg/cataloger/generic"
-	"github.com/anchore/syft/syft/pkg/cataloger/java/internal/maven"
+	"github.com/oligocybersecurity/syft/internal"
+	intFile "github.com/oligocybersecurity/syft/internal/file"
+	"github.com/oligocybersecurity/syft/internal/licenses"
+	"github.com/oligocybersecurity/syft/internal/log"
+	"github.com/oligocybersecurity/syft/internal/unknown"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/generic"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/java/internal/maven"
 )
 
 var archiveFormatGlobs = []string{
@@ -309,7 +309,7 @@ func (j *archiveParser) discoverNameVersionLicense(ctx context.Context, manifest
 	// If we didn't find any licenses in the archive so far, we'll try again in Maven Central using groupIDFromJavaMetadata
 	if len(lics) == 0 {
 		// Today we don't have a way to distinguish between licenses from the manifest and licenses from the pom.xml
-		// until the file.Location object can support sub-paths (i.e. paths within archives, recursively; issue https://github.com/anchore/syft/issues/2211).
+		// until the file.Location object can support sub-paths (i.e. paths within archives, recursively; issue https://github.com/oligocybersecurity/syft/issues/2211).
 		// Until then it's less confusing to use the licenses from the pom.xml only if the manifest did not list any.
 		lics = j.findLicenseFromJavaMetadata(ctx, groupID, artifactID, version, parsedPom, manifest)
 	}
@@ -671,7 +671,7 @@ func newPackageFromMavenData(ctx context.Context, r *maven.Resolver, pomProperti
 		// build a new virtual path suffix for the package that is different from the parent package
 		// we want to use the GroupID and ArtifactID here to preserve uniqueness
 		// Some packages have the same name but different group IDs (e.g. "org.glassfish.jaxb/jaxb-core", "com.sun.xml.bind/jaxb-core")
-		// https://github.com/anchore/syft/issues/1944
+		// https://github.com/oligocybersecurity/syft/issues/1944
 		vPathSuffix += ":" + pomProperties.GroupID + ":" + pomProperties.ArtifactID
 	}
 	virtualPath := location.Path() + vPathSuffix

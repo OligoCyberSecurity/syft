@@ -1,6 +1,6 @@
 package source
 
-import "github.com/anchore/syft/syft/file"
+import "github.com/oligocybersecurity/syft/syft/file"
 
 type FileMetadata struct {
 	Path     string        `json:"path" yaml:"path"`

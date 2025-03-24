@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/anchore/packageurl-go"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/internal/sourcemetadata"
-	"github.com/anchore/syft/syft/linux"
-	"github.com/anchore/syft/syft/pkg"
-	"github.com/anchore/syft/syft/sbom"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/internal/sourcemetadata"
+	"github.com/oligocybersecurity/syft/syft/linux"
+	"github.com/oligocybersecurity/syft/syft/pkg"
+	"github.com/oligocybersecurity/syft/syft/sbom"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func sbomFixture() sbom.SBOM {
@@ -98,7 +98,7 @@ func Test_toGithubModel(t *testing.T) {
 				Detector: DetectorMetadata{
 					Name:    "syft",
 					Version: "0.0.0-dev",
-					URL:     "https://github.com/anchore/syft",
+					URL:     "https://github.com/oligocybersecurity/syft",
 				},
 				Metadata: Metadata{
 					"syft:distro": "pkg:generic/ubuntu@18.04?like=debian",

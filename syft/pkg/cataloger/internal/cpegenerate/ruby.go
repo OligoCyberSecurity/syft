@@ -1,6 +1,6 @@
 package cpegenerate
 
-import "github.com/anchore/syft/syft/pkg"
+import "github.com/oligocybersecurity/syft/syft/pkg"
 
 func candidateVendorsForRuby(p pkg.Package) fieldCandidateSet {
 	metadata, ok := p.Metadata.(pkg.RubyGemspec)

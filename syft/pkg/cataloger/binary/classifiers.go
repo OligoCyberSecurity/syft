@@ -1,7 +1,7 @@
 package binary
 
 import (
-	"github.com/anchore/syft/syft/cpe"
+	"github.com/oligocybersecurity/syft/syft/cpe"
 )
 
 //nolint:funlen

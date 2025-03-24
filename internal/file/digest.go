@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/anchore/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/file"
 )
 
 func supportedHashAlgorithms() []crypto.Hash {

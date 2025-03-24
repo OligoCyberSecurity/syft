@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/syft/syft/cataloging"
+	"github.com/oligocybersecurity/syft/syft/cataloging"
 )
 
 var expressionNodePattern = regexp.MustCompile(`^([a-zA-Z0-9][a-zA-Z0-9-+]*)+$`)

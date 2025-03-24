@@ -2,7 +2,7 @@ package options
 
 import (
 	"github.com/anchore/clio"
-	"github.com/anchore/syft/syft/format/template"
+	"github.com/oligocybersecurity/syft/syft/format/template"
 )
 
 var _ clio.FlagAdder = (*FormatTemplate)(nil)

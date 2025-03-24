@@ -1,6 +1,6 @@
 package relationship
 
-import "github.com/anchore/syft/syft/artifact"
+import "github.com/oligocybersecurity/syft/syft/artifact"
 
 // TODO: put under test...
 func RemoveRelationshipsByID(relationships []artifact.Relationship, id artifact.ID) []artifact.Relationship {

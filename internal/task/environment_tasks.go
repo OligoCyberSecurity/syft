@@ -3,9 +3,9 @@ package task
 import (
 	"context"
 
-	"github.com/anchore/syft/internal/sbomsync"
-	"github.com/anchore/syft/syft/file"
-	"github.com/anchore/syft/syft/linux"
+	"github.com/oligocybersecurity/syft/internal/sbomsync"
+	"github.com/oligocybersecurity/syft/syft/file"
+	"github.com/oligocybersecurity/syft/syft/linux"
 )
 
 // TODO: add tui element here?

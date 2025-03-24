@@ -3,7 +3,7 @@ package swift
 import (
 	"testing"
 
-	"github.com/anchore/syft/syft/pkg/cataloger/internal/pkgtest"
+	"github.com/oligocybersecurity/syft/syft/pkg/cataloger/internal/pkgtest"
 )
 
 func Test_Cataloger_Globs(t *testing.T) {

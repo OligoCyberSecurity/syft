@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/syft/internal/relationship"
-	"github.com/anchore/syft/syft/artifact"
-	"github.com/anchore/syft/syft/source"
+	"github.com/oligocybersecurity/syft/internal/relationship"
+	"github.com/oligocybersecurity/syft/syft/artifact"
+	"github.com/oligocybersecurity/syft/syft/source"
 )
 
 func TestBinaryElfRelationships(t *testing.T) {
