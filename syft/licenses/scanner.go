@@ -9,6 +9,12 @@ import (
 	"github.com/oligocybersecurity/syft/internal/licenses"
 )
 
+// Scanner options
+var (
+	WithCoverage              = licenses.WithCoverage
+	WithIncludeLicenseContent = licenses.WithIncludeLicenseContent
+)
+
 func NewDefaultScanner(o ...licenses.Option) (licenses.Scanner, error) {
 	return licenses.NewDefaultScanner(o...)
 }
